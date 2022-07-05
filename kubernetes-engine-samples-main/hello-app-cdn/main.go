@@ -32,7 +32,7 @@ func main() {
 
 	// register hello function to handle all requests
 	server := http.NewServeMux()
-	server.HandleFunc("/", hello)
+	server.HandleFunc("/", Prabu)
 
 	// start the web server on port and accept requests
 	log.Printf("Server listening on port %s", port)
