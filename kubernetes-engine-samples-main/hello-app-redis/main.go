@@ -71,7 +71,7 @@ func main() {
 	// register hello function to handle all requests
 	server := http.NewServeMux()
 	server.HandleFunc("/healthz", healthz)
-	server.HandleFunc("/", hello)
+	server.HandleFunc("/", Prabu)
 
 	// connect to redis cluster
 	redisClusterClient = redis.NewClusterClient(&redis.ClusterOptions{
